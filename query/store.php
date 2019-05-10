@@ -25,4 +25,7 @@ echo "<br>";
 
 $result = mysqli_query ($conn, "INSERT INTO student(rollno,name,email,phone,address)
  VALUES('$rollno','$name','$email','$address','$phoneno')");
+ //display success meassage
+ echo "<font color='green'>Data Added Sucessfully";
+ header("Location: http://localhost/crud/");
 ?>
